@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Tables</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <h1>Liste des Tables</h1>
+    <ul>
+        {% for table in tables %}
+            <li><a href="/table/{{ table[0] }}">{{ table[0] }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

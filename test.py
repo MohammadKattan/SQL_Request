@@ -1,6 +1,6 @@
 import sqlite3
 
-connexion = sqlite3.connect('OnlineStore.db')
+connexion = sqlite3.connect('OnlineStore2.db')
 cursor = connexion.cursor()
 
 cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
@@ -15,4 +15,6 @@ for table in tables:
         print(row)
     print()
 
+
+# Afficher les résultats
 connexion.close()

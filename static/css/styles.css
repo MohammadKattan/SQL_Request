@@ -1,0 +1,45 @@
+/* Réinitialisation des styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Styles pour les titres */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour les listes non ordonnées (ul) */
+ul {
+    list-style-type: none; /* Supprime les puces par défaut */
+    margin-left: 0; /* Réinitialise la marge à zéro */
+    padding-left: 20px; /* Ajoute un espacement à gauche pour la liste */
+}
+
+/* Styles pour les éléments de la liste (li) */
+ul li {
+    position: relative;
+    padding-left: 30px; /* Ajoute un espacement à gauche pour chaque élément de la liste */
+    margin-bottom: 8px; /* Espacement entre les éléments de la liste */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titre }}</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    
+</head>
+<body>
+    <h1>{{ titre }}</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID Client</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Adresse</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for client in donnees %}
+                <tr>
+                    <td>{{ client[0] }}</td>
+                    <td>{{ client[1] }}</td>
+                    <td>{{ client[2] }}</td>
+                    <td>{{ client[3] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

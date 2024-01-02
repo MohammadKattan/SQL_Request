@@ -1,6 +1,6 @@
 import sqlite3
 def creation():
-    connexion = sqlite3.connect('OnlineStore.db') 
+    connexion = sqlite3.connect('OnlineStore2.db') 
 
     cursor = connexion.cursor()
 
@@ -26,7 +26,7 @@ def creation():
             stock INTEGER
         )
     ''')
-    cursor.execute('''CREATE TABLE IF NOT EXISTS commandes_prodiuts(
+    cursor.execute('''CREATE TABLE IF NOT EXISTS commandes_produits(
             id_commande INTEGER,
             id_produit INTEGER,
             quantite INTEGER,

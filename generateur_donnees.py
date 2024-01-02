@@ -51,6 +51,6 @@ def generateur():
         id_commande = random.randint(1,29)
         id_produit = random.randint(1,20)
         quantite = random.randint(1,5)
-        cursor.execute("INSERT INTO commandes_prodiuts(id_commande,id_produit,quantite)VALUES(?,?,?)",(id_commande,id_produit,quantite))
+        cursor.execute("INSERT INTO commandes_produits(id_commande,id_produit,quantite)VALUES(?,?,?)",(id_commande,id_produit,quantite))
     connexion.commit()
     connexion.close()
