@@ -24,9 +24,27 @@
                     <td>{{ client[1] }}</td>
                     <td>{{ client[2] }}</td>
                     <td>{{ client[3] }}</td>
+                    <td>
+                        <form action="/commandes/{{ client[0] }}" method="GET">
+                            <input type="submit" value="Voir les commandes">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/produits_commandes/{{ client[0] }}" method="GET">
+                            <input type="submit" value="Voir les produits commandés">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/client_depense/{{ client[0] }}" method="GET">
+                            <input type="submit" value="Montant total dépensé">
+                        </form>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
+    <form action="/commandes_ce_jour/">
+        <input type="submit" value="Commandes du jour">
+    </form>
 </body>
 </html>

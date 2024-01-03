@@ -43,3 +43,22 @@ ul li {
     padding-left: 30px; /* Ajoute un espacement à gauche pour chaque élément de la liste */
     margin-bottom: 8px; /* Espacement entre les éléments de la liste */
 }
+form {
+    margin-bottom: 20px;
+}
+
+/* Style pour le bouton du formulaire */
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style pour le bouton du formulaire au survol */
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}

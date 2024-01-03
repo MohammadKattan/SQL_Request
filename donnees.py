@@ -9,7 +9,10 @@ def donnees() :
     clients_data = [
         ('Client A', 'clientA@example.com', 'Adresse A'),
         ('Client B', 'clientB@example.com', 'Adresse B'),
-        ('Client C', 'clientC@example.com', 'Adresse C')
+        ('Client C', 'clientC@example.com', 'Adresse C'),
+        ('Client D', 'clientD@example.com', 'Adresse D'),
+        ('Client E', 'clientE@example.com', 'Adresse E'),
+        ('Client F', 'clientF@example.com', 'Adresse F')
     ]
     cursor.executemany("INSERT INTO clients (nom, email, adresse) VALUES ( ?, ?, ?)", clients_data)
 
@@ -18,7 +21,10 @@ def donnees() :
         ( 1, '2023-10-15', 50.00),
         ( 2, '2023-11-20', 75.50),
         ( 1, '2023-12-05', 30.25),
-        ( 3, '2023-12-10', 100.00)
+        ( 3, '2023-12-10', 100.00),
+        ( 4, '2024-01-03', 75.50),
+        ( 5, '2024-01-03', 30.25),
+        ( 1, '2024-01-03', 100.00)
     ]
     cursor.executemany("INSERT INTO commandes (id_client, date_commande, montant_total)VALUES ( ?, ?, ?)", commandes_data)
 
@@ -38,7 +44,11 @@ def donnees() :
         (2, 2, 3),
         (3, 4, 2),
         (4, 1, 4),
-        (4, 3, 1)
+        (5, 3, 1),
+        (5, 2, 3),
+        (6, 4, 2),
+        (6, 1, 4),
+        (7, 3, 1)
     ]
     cursor.executemany("INSERT INTO commandes_produits (id_commande, id_produit, quantite)VALUES (?, ?, ?)", commandes_produits_data)
 

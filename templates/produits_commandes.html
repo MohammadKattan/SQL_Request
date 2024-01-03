@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titre }}</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+</head>
+<body>
+    <h1>{{ titre }}</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID Produit</th>
+                <th>Nom du Produit</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for produit in produits_commandes %}
+                <tr>
+                    <td>{{ produit[0] }}</td>
+                    <td>{{ produit[1] }}</td>
+                    <td>{{ produit[2] }}</td>
+                    <td>{{ produit[3] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

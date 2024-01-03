@@ -10,9 +10,8 @@
     <table>
         <thead>
             <tr>
-                <th>ID Commande</th>
                 <th>ID Client</th>
-                <th>Date Commande</th>
+                <th>Nom Client</th>
                 <th>Montant Total</th>
             </tr>
         </thead>
@@ -22,13 +21,8 @@
                     <td>{{ row[0] }}</td>
                     <td>{{ row[1] }}</td>
                     <td>{{ row[2] }}</td>
-                    <td>{{ row[3] }}</td>
-                </tr>
             {% endfor %}
         </tbody>
     </table>
-    <form action="/commandes_details/">
-        <input type="submit" value="Commandes_détails">
-    </form>
 </body>
 </html>
